@@ -20,8 +20,8 @@ pose_model = YOLO('yolov8n-pose.pt')
 object_model = YOLO('yolov8m.pt')
 
 # Load the TensorFlow model and label encoder
-class_model = load_model('model.keras')
-with open('/home/surya/Desktop/proj/label_encoder.pkl', 'rb') as f:
+class_model = load_model('model.keras')#put the trained model here
+with open('label_encoder.pkl', 'rb') as f:#put the label_encoder file 
     label_encoder = pickle.load(f)
 
 # Define a function to preprocess image for the classification model
